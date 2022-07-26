@@ -16,7 +16,8 @@ app.post("/info", (req, res) => {
 
     res.send({
         isSend: true, // Se marcado como true, envia as mensagens descritas em mensagens a enviar.
-        mensagens_a_enviar: ['Você está em uma API TESTE com integração.\nSegue o Manual em anexo.', 'file-link=http://www.africau.edu/images/default/sample.pdf'], // mensagens a serem enviadas pra o usuário
+        mensagens_a_enviar: ['Você está em uma API TESTE com integração.\nSegue o Manual em anexo.', 
+        'file-link=http://www.africau.edu/images/default/sample.pdf'], // mensagens a serem enviadas pra o usuário
         variaveis: { // variaveis a serem armazenada durante o fluxo da conversa.
             versao_api: "1.0.0"
         }
